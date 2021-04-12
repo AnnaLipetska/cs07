@@ -135,7 +135,7 @@ namespace task3
                     infoBuilder.Append(member.MemberType).Append(" ").Append(member.Name).Append(Environment.NewLine);
 
                     if (selectedMembers.Where(r => r.TheText == "Member attributes").Any())
-                    {
+                    { 
                         var memberAttributes = member.GetCustomAttributes(false);
                         if (memberAttributes.Any())
                         {
